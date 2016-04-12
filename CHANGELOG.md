@@ -1,6 +1,40 @@
 Changelog
 =========
 
+2.0.0-alpha.4
+-------------
+
+### Features
+* Upgraded `react` to `^15.0.0`
+* Upgraded `react-dom` to `^15.0.0`
+* Upgraded `react-addons-test-utils` to `^15.0.0`
+* Upgraded `eslint-plugin-flow-vars` to `^0.3.0`
+
+### Improvements
+* Updated `npm run deploy` to be environment agnostic (no longer forces `production`)
+* Added `npm run deploy:prod` (forces `production`, acts as old `npm run deploy`)
+* Added `npm run deploy:dev` (forces `development`)
+
+### Fixes
+* Removed `strip_root` option in Flow to support Nuclide
+* Updated webpack development configuration to use correct `public_path`
+
+
+2.0.0-alpha.3
+-------------
+
+### Features
+* Upgraded `flow-interfaces` to `^0.6.0`
+
+### Improvements
+* Moved dependencies needed for production builds from devDependencies to regular dependencies
+
+### Fixes
+* Production configuration now generates assets with absolute rather than relative paths
+
+### Deprecations
+* Removed `eslint-loader` for performance reasons
+
 2.0.0-alpha.2
 -------------
 
